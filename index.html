@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Steve Olechowski's World</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #home {
+            text-align: center;
+        }
+        #about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #about img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        #gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        #gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            padding: 10px;
+            border: none;
+            background-color: #444;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Steve Olechowski's World</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Hello, I'm Steve Olechowski</h2>
+        <p>Welcome to my personal webpage! I'm passionate about music, especially guitars. Explore my collection, learn more about me, and feel free to reach out.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="your-photo.jpg" alt="Your Photo">
+        <p>I'm a guitar enthusiast with over 30 guitars in my collection. My favorite is the PRS Swamp Ash Special. Whether it's playing, collecting, or just talking about guitars, music is my life.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>My Guitar Collection</h2>
+        <img src="guitar1.jpg" alt="Guitar 1">
+        <img src="guitar2.jpg" alt="Guitar 2">
+        <img src="guitar3.jpg" alt="Guitar 3">
+        <img src="guitar4.jpg" alt="Guitar 4">
+        <img src="prs-swamp-ash-special.jpg" alt="PRS Swamp Ash Special">
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Steve Olechowski. All rights reserved.</p>
+    </footer>
+</body>
+</html>
